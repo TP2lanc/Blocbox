@@ -96,3 +96,10 @@ header nav ul > li.btn-outline {
 header nav ul > li.btn-outline:hover {
     background: #ffffff;
 }
+header nav ul > li > a {
+    color: #ffffff;
+    text-decoration: none;
+}
+header nav ul > li.btn-outline:hover > a{
+    color: #34495e;
+}
