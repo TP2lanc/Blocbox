@@ -35,14 +35,6 @@ p {
 .container:after {
     clear:both;
 }
-.dropped {
-    padding-top: 20px;
-}
-.up {
-    position: relative;
-    margin-top: 0px;
-    padding-top: 0px;
-}
 .one-half, .one-third, .one-fourth {
     width:96%;
     float: left;
@@ -50,7 +42,6 @@ p {
     min-height: 1px;
     margin: 0 2% 20px;
 }
-
 @media (min-width:768px) {
     .container {
         width: 750px;
@@ -77,9 +68,7 @@ p {
 }
 @media tv {
    .hero { 
-      font-size:150% .;
-      width: ;
-      margin: 0 auto;
+      font-size:150%;
    }
 }
 
@@ -261,6 +250,7 @@ header .hero img {
  .testimonials ul li {
    list-style-type: none;
  }
+
  .testimonials blockquote {
    color:#FFFFFF;
    text-align: left;
@@ -304,24 +294,21 @@ header .hero img {
     color:#ffffff;
     background: #34495e;
     background-image: radial-gradient(#3498db 2%, #34495E 98%);
-    background-size: cover;
 }
 .subhero {
+    padding:3em;
     text-align: center;
-    display: inline-block;
     position: relative;
-    height: 300px;
 }
-header .subhero h2 {
+.subhero h2 {
     font-size: 48px;
-    font-weight: normal;
-    margin: 40px 0 0;
+    font-weight: normal; 
 }
-header .subhero p {
+.subhero p {
     font-size: 22px;
     line-height: 26px;
     font-weight: 100px;
-    margin: 20px 20px 40px;
+    margin: 20px 0 40px;
 }
 /* FOOTER */
  footer {
