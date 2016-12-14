@@ -8,15 +8,69 @@
  */
 
 /* These styles assume you are using ul and li */
-.dropit {
+.settings1.dropit {
+    list-style: none;
+	padding: 0;
+    margin: 0;
+    float:right;
+    display:inline-block;
+}
+.settings1.dropit .dropit-trigger { 
+    position: relative;
+    text-align: right;
+    margin-right: 10px;
+}
+.settings1.dropit .dropit-submenu {
+    position: absolute;
+    bottom: 100%;
+    right: 0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 140px;
+    list-style: none;
+	padding: 10px;
+	margin: 0;
+}
+.settings1.dropit .dropit-open .dropit-submenu { 
+    display: block; 
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+}
+.settings1.dropit .dropit-open .dropit-submenu:after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 8px 8px 0;
+  border-color: #FFFFFF transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -8px;
+  right: 10px;
+ }
+ .settings1.dropit .dropit-open .dropit-submenu li {
+  display: block;
+  margin-bottom: 20px;
+ }
+ .settings1.dropit .dropit-open .dropit-submenu li:last-child {
+  margin-bottom: 0px;
+ }
+ .settings1.dropit .dropit-open .dropit-submenu li a {
+  color:#34495E;
+  text-decoration: none;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight:100;
+ }
+.menu.dropit {
     list-style: none;
 	padding: 0;
     margin: 15px 0 0;
     float:right;
     display:inline-block;
 }
-.dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu {
+.menu.dropit .dropit-trigger { position: relative; }
+.menu.dropit .dropit-submenu {
     position: absolute;
     top: 100%;
     right: 0; /* dropdown left or right */
@@ -27,13 +81,13 @@
 	padding: 20px;
 	margin: 20px 0 0;
 }
-.dropit .dropit-open .dropit-submenu { 
+.menu.dropit .dropit-open .dropit-submenu { 
     display: block; 
     background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
     border-radius: 4px;
 }
-.dropit .dropit-open .dropit-submenu:after {
+.menu.dropit .dropit-open .dropit-submenu:after {
   content: " ";
   position: absolute;
   border-style: solid;
@@ -45,14 +99,14 @@
   top: -8px;
   right: 10px;
  }
- .dropit .dropit-open .dropit-submenu li {
+ .menu.dropit .dropit-open .dropit-submenu li {
   display: block;
   margin-bottom: 20px;
  }
- .dropit .dropit-open .dropit-submenu li:last-child {
+ .menu.dropit .dropit-open .dropit-submenu li:last-child {
   margin-bottom: 0px;
  }
- .dropit .dropit-open .dropit-submenu li a {
+ .menu.dropit .dropit-open .dropit-submenu li a {
   color:#34495E;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;

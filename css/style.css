@@ -511,6 +511,14 @@ header .hero img {
  .left-nav .settings a {
    color:#FFFFFF;
    text-decoration: none;
+   text-align: left;
+   float: left;
+   margin-left:5px;
+   margin-top:8px;
+ }
+ .left-nav .settings.trigger a {
+   color:#FFFFFF;
+   text-decoration: none;
    text-align: right;
    float: right;
    margin-right:10px;
