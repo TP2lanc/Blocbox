@@ -29,7 +29,7 @@
     min-width: 140px;
     list-style: none;
 	padding: 10px;
-	margin: 0;
+	margin: 0 -20px 0 0;
 }
 .settings1.dropit .dropit-open .dropit-submenu { 
     display: block; 
@@ -47,7 +47,7 @@
   width: 0;
   z-index: 1;
   bottom: -8px;
-  right: 10px;
+  right: 18px;
  }
  .settings1.dropit .dropit-open .dropit-submenu li {
   display: block;

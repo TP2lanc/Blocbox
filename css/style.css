@@ -41,7 +41,7 @@ a:active {
 .container:after {
     clear:both;
 }
-.one-half, .one-third, .one-fourth {
+.one-half, .one-half alt, .one-third, .one-fourth {
     width:96%;
     float: left;
     position: relative;
@@ -51,6 +51,9 @@ a:active {
 .one-fourth.alt {
     margin-top: 20px;
 }
+    .footer.logo {
+        padding: 0;
+    }
 @media (min-width:768px) {
     .container {
         width: 750px;
@@ -76,7 +79,7 @@ a:active {
     }
 }
 @media tv {
-   .hero { 
+    .hero { 
       font-size:150%;
    }
 }
@@ -352,6 +355,7 @@ header .hero img {
    margin: 0 auto;
    display: block;
  }
+@media (min-width: 992px){
    footer{
      background-color: #3498DB;
      background-image: linear-gradient(to left,
@@ -380,7 +384,7 @@ header .hero img {
    color: #ffffff;
    background: #34495e;
    background-image: linear-gradient(206deg, #5f81a3 0%, #34495e 94%);
-   float: left
+   overflow: hidden;
    position: absolute;
    -webkit-transition: all 0.3s ease-in-out;
    -moz-transition: all 0.3s ease-in-out;
